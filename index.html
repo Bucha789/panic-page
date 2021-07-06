@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Fonts Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Work+Sans&display=swap"
+    rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Parte del Header -->
+  <div class="main-container">
+    <!-- Menú Desktop -->
+    <div class="menu">
+      <div class="menu-left">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">WORK</a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <img src="./img/logo.svg" alt="Logo de la página">
+      </div>
+      <div class="menu-right">
+        <ul>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Menú Mobile -->
+    <div class="menu-mobile">
+      <div class="menu-open-close">
+        <a href="#" class="hamburguer-menu">
+          <img src="./img/hamburguer.svg" alt="Menu Hamburguesa">
+        </a>
+        <div class="header">
+          <a href="#" class="logo">
+            <img src="./img/logo.svg" alt="Logo de la pagina">
+          </a>
+        </div>
+        <div id="menu-mobile-items" class="menu-mobile-closed">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">WORK</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <!-- MAIN VIDEO -->
+    <section class="main-video">
+      <div class="video">
+        <video src="./video/video.mp4" autoplay muted loop></video>
+      </div>
+    </section>
+    <!--MAIN INTRO-->
+    <section class="intro">
+      <h1>Loud Stories <br> exceptional craft</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum provident dolorem molestiae excepturi
+        tenetur totam rem repellendus eligendi, commodi consectetur quo id, quia repellat expedita explicabo esse libero
+        laboriosam?</p>
+    </section>
+    <!-- WORK -->
+    <section class="work">
+      <h2>Work</h2>
+      <div class="grid work">
+        <!-- WORK ITEMS -->
+        <a href="#" class="item" data-id="0">
+          <img src="./img/portada-01.jpg" alt="portada 1">
+          <div class="bg-hover">
+            <div class="info">
+              <h3>Viaje al espacio</h3>
+              <p>Space X</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="item" data-id="1">
+          <img src="./img/portada-02.jpg" alt="portada 2">
+          <div class="bg-hover">
+            <div class="info">
+              <h3>Viaje al espacio</h3>
+              <p>Space X</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="item" data-id="2">
+          <img src="./img/portada-03.jpg" alt="portada 3">
+          <div class="bg-hover">
+            <div class="info">
+              <h3>Viaje al espacio</h3>
+              <p>Space X</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="item" data-id="3">
+          <img src="./img/portada-04.jpg" alt="portada 4">
+          <div class="bg-hover">
+            <div class="info">
+              <h3>Viaje al espacio</h3>
+              <p>Space X</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="item" data-id="4">
+          <img src="./img/portada-05.jpg" alt="portada 5">
+          <div class="bg-hover">
+            <div class="info">
+              <h3>Viaje al espacio</h3>
+              <p>Space X</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="item" data-id="5">
+          <img src="./img/portada-06.jpg" alt="portada 6">
+          <div class="bg-hover">
+            <div class="info">
+              <h3>Viaje al espacio</h3>
+              <p>Space X</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="item" data-id="6">
+          <img src="./img/portada-07.jpg" alt="portada 7">
+          <div class="bg-hover">
+            <div class="info">
+              <h3>Viaje al espacio</h3>
+              <p>Space X</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="item" data-id="7">
+          <img src="./img/portada-08.jpg" alt="portada 8">
+          <div class="bg-hover">
+            <div class="info">
+              <h3>Viaje al espacio</h3>
+              <p>Space X</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="item" data-id="8">
+          <img src="./img/portada-09.jpg" alt="portada 9">
+          <div class="bg-hover">
+            <div class="info">
+              <h3>Viaje al espacio</h3>
+              <p>Space X</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <section class="about">
+      <h2>Skills</h2>
+      <p>Creative direction | Story development</p>
+      <div class="columns">
+        <div>
+          <h3>We are</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quo facilis praesentium veritatis quos odit
+            esse. Rerum, consequatur voluptatum possimus vel laborum expedita ea quaerat non, doloremque voluptatem
+            quibusdam repudiandae.</p>
+        </div>
+        <div>
+          <h3>The advantage</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quo facilis praesentium veritatis quos odit
+            esse. Rerum, consequatur voluptatum possimus vel laborum expedita ea quaerat non, doloremque voluptatem
+            quibusdam repudiandae.</p>
+        </div>
+        <div>
+          <h3>The team</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quo facilis praesentium veritatis quos odit
+            esse. Rerum, consequatur voluptatum possimus vel laborum expedita ea quaerat non, doloremque voluptatem
+            quibusdam repudiandae.</p>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <section class="contact">
+      <div class="contact-container">
+        <h2>Contact us</h2>
+        <div class="columns">
+          <div class="location">
+            <h3>Contact us</h3>
+            <p>HELLO@PANICSTUDIO.TV</p>
+            <p>Office +371 2670 7867</p>
+            <h3>Location</h3>
+            <p>Stabu Street 30-6</p>
+            <p>Riga, Latvia</p>
+          </div>
+          <div class="social">
+            <h3>Follow us</h3>
+            <a href="#">
+              <img src="./img/facebook.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./img/instagram.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./img/twitter.svg" alt="">
+            </a>
+          </div>
+          <div class="email">
+            <h3>For USA</h3>
+            <p>Snyder</p>
+            <p>Sari Rowe</p>
+            <p>SARI@SNYDERNEWYORK.COM</p>
+            <h3>For UK</h3>
+            <p>Snyder</p>
+            <p>Jolene Lioyd-Jones</p>
+            <p>JOLENE@SNYDERNEWYORK.COM</p>
+            <h3>For France</h3>
+            <p>Creasenso</p>
+            <p>Marielle Devoyon</p>
+            <p>MARIELLE@CREASENSO.COM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+    </footer>
+
+  </div>
+  <!-- Gallery -->
+  <div id="details-container">
+    <div class="nav-bar">
+      <div></div>
+      <div class="nav-buttons">
+        <a href="#" id="prev-button">
+          <span class="material-icons md-48">
+            arrow_back_ios
+          </span>
+        </a>
+        <a href="#" id="next-button">
+          <span class="material-icons md-48">
+            arrow_forward_ios
+          </span>
+        </a>
+      </div>
+      <div class="close">
+        <a href="#">
+          <span class="material-icons md-48">close</span>
+        </a>
+      </div>
+      <!-- Items -->
+    </div>
+    <div class="items">
+      <div class="item item-hide">
+        <div class="main-image">
+          <img src="./img/portada-01.jpg" alt="">
+        </div>
+        <div class="title">
+          <h2>Viaje al espacio</h2>
+        </div>
+        <div class="description">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eum, molestias nesciunt laborum natus enim, veniam ad assumenda eveniet quo hic, aliquam voluptas fugiat. Odit itaque ipsum ducimus repudiandae iure.</p>
+        </div>
+      </div>
+      <div class="item item-hide">
+        <div class="main-image">
+          <img src="./img/portada-02.jpg" alt="">
+        </div>
+        <div class="title">
+          <h2>Viaje al espacio</h2>
+        </div>
+        <div class="description">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eum, molestias nesciunt laborum natus enim, veniam ad assumenda eveniet quo hic, aliquam voluptas fugiat. Odit itaque ipsum ducimus repudiandae iure.</p>
+        </div>
+      </div>
+      <div class="item item-hide">
+        <div class="main-image">
+          <img src="./img/portada-03.jpg" alt="">
+        </div>
+        <div class="title">
+          <h2>Viaje al espacio</h2>
+        </div>
+        <div class="description">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eum, molestias nesciunt laborum natus enim, veniam ad assumenda eveniet quo hic, aliquam voluptas fugiat. Odit itaque ipsum ducimus repudiandae iure.</p>
+        </div>
+      </div>
+      <div class="item item-hide">
+        <div class="main-image">
+          <img src="./img/portada-04.jpg" alt="">
+        </div>
+        <div class="title">
+          <h2>Viaje al espacio</h2>
+        </div>
+        <div class="description">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eum, molestias nesciunt laborum natus enim, veniam ad assumenda eveniet quo hic, aliquam voluptas fugiat. Odit itaque ipsum ducimus repudiandae iure.</p>
+        </div>
+      </div>
+      <div class="item item-hide">
+        <div class="main-image">
+          <img src="./img/portada-05.jpg" alt="">
+        </div>
+        <div class="title">
+          <h2>Viaje al espacio</h2>
+        </div>
+        <div class="description">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eum, molestias nesciunt laborum natus enim, veniam ad assumenda eveniet quo hic, aliquam voluptas fugiat. Odit itaque ipsum ducimus repudiandae iure.</p>
+        </div>
+      </div>
+      <div class="item item-hide">
+        <div class="main-image">
+          <img src="./img/portada-06.jpg" alt="">
+        </div>
+        <div class="title">
+          <h2>Viaje al espacio</h2>
+        </div>
+        <div class="description">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eum, molestias nesciunt laborum natus enim, veniam ad assumenda eveniet quo hic, aliquam voluptas fugiat. Odit itaque ipsum ducimus repudiandae iure.</p>
+        </div>
+      </div>
+      <div class="item item-hide">
+        <div class="main-image">
+          <img src="./img/portada-07.jpg" alt="">
+        </div>
+        <div class="title">
+          <h2>Viaje al espacio</h2>
+        </div>
+        <div class="description">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eum, molestias nesciunt laborum natus enim, veniam ad assumenda eveniet quo hic, aliquam voluptas fugiat. Odit itaque ipsum ducimus repudiandae iure.</p>
+        </div>
+      </div>
+      <div class="item item-hide">
+        <div class="main-image">
+          <img src="./img/portada-08.jpg" alt="">
+        </div>
+        <div class="title">
+          <h2>Viaje al espacio</h2>
+        </div>
+        <div class="description">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eum, molestias nesciunt laborum natus enim, veniam ad assumenda eveniet quo hic, aliquam voluptas fugiat. Odit itaque ipsum ducimus repudiandae iure.</p>
+        </div>
+      </div>
+      <div class="item item-hide">
+        <div class="main-image">
+          <img src="./img/portada-09.jpg" alt="">
+        </div>
+        <div class="title">
+          <h2>Viaje al espacio</h2>
+        </div>
+        <div class="description">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eum, molestias nesciunt laborum natus enim, veniam ad assumenda eveniet quo hic, aliquam voluptas fugiat. Odit itaque ipsum ducimus repudiandae iure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- SCREEN -->
+  <div id="screen">
+
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

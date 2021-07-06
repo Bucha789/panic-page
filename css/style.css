@@ -1,0 +1,453 @@
+/* variables */
+
+:root{
+  --bakckground-color: #16ffbd;
+  --primary-color: #000;
+  --highlight-color: #ff8dac;
+}
+/* globales */
+body {
+  background-color: var(--bakckground-color);
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+  line-height: 2;
+  padding: 0;
+  margin: 0;
+}
+::selection {
+  background-color: var(--highlight-color);
+}
+::-moz-selection {
+  background-color: var(--highlight-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 10px;
+  transition: color .2s ease-in-out;
+}
+a:hover {
+  color: var(--highlight-color);
+}
+h1, h2, h3 {
+  font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+h1, h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.container {
+  width: 1920px;
+}
+
+/* menu */
+.menu {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.menu > div {
+  width: 33.3%;
+}
+.menu ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+.menu li {
+  animation-name: opening;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+.menu a {
+  font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+}
+.menu .logo img {
+  animation-name: opening;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+/* menu-mobile */
+.menu-mobile {
+  display: none;
+  position: relative;
+}
+.menu-mobile .header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.menu-mobile .header .logo {
+  flex-grow: 2;
+  text-align: center;
+}
+.menu-mobile .header .logo img {
+  width: 64px;
+  animation-name: opening;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+.menu-mobile ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.menu-mobile ul li {
+  text-align: center;
+  list-style: none;
+}
+.menu-mobile ul li a {
+  font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
+  display: block;
+  padding: 10px 0;
+  font-size: 1.5rem;
+}
+.hamburguer-menu {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+.menu-mobile-closed {
+  display: none;
+}
+/* Main video */
+
+.main-video {
+  margin-top: 100px;
+  transform-origin: center center;
+  transform: skewY(-10deg);
+  overflow: hidden;
+  height: 500px;
+  margin-bottom: 150px;
+}
+.main-video .video {
+  overflow: hidden;
+  transform: skewY(10deg) scale(1.5);
+}
+.main-video .video video {
+  width: 100%;
+  margin-top: -100px;
+  object-fit: cover;
+}
+
+/* Main intro */
+
+.intro {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-bottom: 100px;
+}
+
+/* Main work */
+
+.work.grid {
+  transform: skewY(-10deg);
+}
+.grid {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid .item {
+  position: relative;
+  height: 300px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.grid .item img {
+  width: 101%;
+  margin-top: -60px;
+  transform: skewY(10deg) scale(1.1);
+  transition: all 75ms;
+}
+.grid .item:hover img {
+  transform: skewY(10deg) scale(1.2);
+}
+.grid .item .bg-hover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .6);
+  opacity: 0;
+  transition: opacity 75ms ease-in-out;
+}
+.grid .item .info {
+  transform: skewY(10deg);
+} 
+.grid .item:hover .info {
+  animation-name: bounce;
+  animation-duration: .4s;
+  animation-timing-function: ease-in-out;
+} 
+.grid .item:hover .bg-hover {
+  opacity: 1;
+  /* overflow: hidden; no es nesesarioo porque yo no tengo el 125% */
+}
+.grid .item .info h3{
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 0;
+}
+.grid .item .info p {
+  color: var(--bakckground-color);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* About */
+
+.about {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 150px;
+}
+.columns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+/* contact */
+.contact {
+  background-color: #000;
+  color: white;
+  transform: skewY(-10deg);
+  padding: 0 20px;
+}
+.contact-container {
+  padding-top: 50px;
+  width: 100%;
+  max-width: 1280px;
+  transform: skewY(10deg);
+  margin: 0 auto;
+  padding-bottom: 150px;
+}
+.contact-container p {
+  color: var(--bakckground-color);
+}
+.contact-container .email {
+  text-align: right;
+}
+.contact-container .location {
+  text-align: left;
+}
+.contact-container .location h3 , .contact-container .email h3 {
+  text-align: inherit;
+}
+ /* footer */
+
+footer {
+  background-color: var(--primary-color);
+  height: 400px;
+  margin-top: -180px;
+}
+
+/* parte del screen */
+#screen {
+  background-color: var(--highlight-color);
+  position: fixed;
+  top: -250px;
+  width: 100%;
+  height: 5vh;
+  transform: skewY(-10deg);
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  z-index: 100;
+}
+/* details container */
+#details-container {
+  display: none;
+  background-color: var(--bakckground-color);
+  position: fixed;
+  inset: 0 0;
+  padding: 0 20px;
+}
+
+#details-container .nav-bar {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.nav-bar .nav-buttons a, .nav-bar .close a {
+  padding: 0;
+}
+
+#details-container .items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#details-container .items .main-image {
+  display: flex;
+  justify-content: center;
+}
+#details-container .items .main-image img {
+  max-width: 900px;
+  width: 100%;
+}
+#details-container .item.item-hide {
+  display: none;
+}
+/* animaciones locas */
+
+@keyframes bounce {
+  0% {
+    transform: skewY(10deg) translateY(500px);
+  }
+  80% {
+    transform: skewY(10deg) translateY(-50px);
+  }
+  100% {
+    transform: skewY(10deg) translateY(0);
+  }
+}
+
+@keyframes opening {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1) rotate(25deg);
+  }
+  85% {
+    transform: scale(1) rotate(-25deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* media queries */
+@keyframes fade-in {
+  0% {
+    height: 5vh;
+  }
+  50% {
+    height: 150vh;
+  }
+  100% {
+    height: 5vh;
+  }
+}
+
+@media (max-width: 1540px) {
+  /* main grid */
+  .grid .item img {
+    width: 150%;
+  }
+  /* footer */
+  footer {
+    height: 350px;
+  }
+}
+@media (max-width: 1280px) {
+  /* Main video */
+  .main-video {
+    height: 400px;
+  }
+}
+@media (max-width: 1000px) {
+  /* main video */
+  .main-video {
+    height: 350px;
+  }
+  .main-video .video video {
+    margin-top: 0;
+  }
+  /* main about */
+  .columns {
+    flex-direction: column;
+  }
+  .contact-container .location, .contact-container .email {
+    text-align: center;
+  }
+  /* footer */
+  footer {
+    height: 300px;
+  }
+}
+@media (max-width: 800px) {
+  /* main video */
+  /* esto se pudo haber solucionado si desde un principio hubieramos usado position relative o cosas así */
+  .main-video .video {
+    position: relative;
+    height: 500px;
+  }
+  .main-video .video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(1.5) translate(-50%, -50%);
+  }
+  /* Main grid */
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 540px) {
+  /* main video */
+  .menu-mobile{
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  .main-video .video {
+    width: 120%;
+  }
+  /* main grid */
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .grid .item img {
+    width: 150%;
+  }
+  /* footer */
+  footer {
+    height: 250px;
+  }
+  /* detail container */
+#details-container .items {
+  padding-top: 100px;
+}
+}
